@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<form method="post" action="admission.php">
+<head>
+<style>
+body {
+         margin: 0;
+         padding: 0;
+         background: url(home.jpg) ; 
+         background-size: cover;
+         background-position: top;
+         font-family: times;
+         font-coor:white;
+}
+
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text],input[type=phone],input[type=date],input[type=email],input[type=number],input[type=Password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+input[type=text]:focus, input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.submitbtn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.submitbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+</style>
+</head>
+<body>
+
+
+  <div class="transbox">
+  <marquee behavior="scroll" direction="left">
+  
+    <h1>Admissions open for the academic year 2019-20</h1>
+    <h3>Please fill out the form or contact us for more details</h3>
+  </marquee>
+  </div>
+
+<div class="container">
+
+    <label for="name"><H2><font color="white"><b>Name</b></font></H2></label>
+    <input type="text" placeholder="Enter your name" name="name" required>
+    <hr>
+    <label for="email"><H2><font color="white"><b>Email</b></font></H2></label>
+    <input type="text" placeholder="Enter your emailid" name="email" required>
+    <hr>
+     <label for="phone"><h2><font color="white"><b>Phone</b></font></h2></label>
+    <input type="number" placeholder="Enter phone number" name="phone" required>
+
+    <hr>
+
+    <font color="white"><input name="submit" value="Submit" type="submit" class="submitbtn">
+</font>
+  </div>
+
+</body>
+</html>

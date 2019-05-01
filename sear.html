@@ -1,0 +1,44 @@
+<html>
+<link rel="stylesheet" type="text/css" href="reg.css">
+<form method="post" action="adddept.php">
+  <div class="container">
+    <h1>Add Department</h1>
+    <p>Please fill in this form to add a Department.</p>
+    <hr>
+
+    <label for="DepartmentID"><b>Department-ID</b></label>
+    <input type="number" placeholder="Enter Department-ID" name="deptid" required>
+
+    <label for="Departmentname"><b>Department-Name</b></label>
+    <input type="text" placeholder="Enter Empname" name="deptname" required>
+
+     <label for="ManagerID"><b>Manager-ID</b></label>
+    <input type="number" placeholder="Enter Manager-ID" name="dept" required>
+
+    <hr>
+
+    <input name="addemp" value="Add employee" type="submit" class="addempbtn">
+
+  </div>
+</form>
+<hr>
+
+<form method="post" action="searchdept.php">
+  <div class="container">
+    <h1>Show Employees in a department</h1>
+    <p>Please enter the Department-ID to see employees working in a particular department.</p>
+    <hr>
+
+    <label for="deptid"><b>Enter Department-ID</b></label>
+    <input type="number" placeholder="Enter Department-ID" name="deptid" required>
+
+    <hr>
+
+    <input name="searchemp in dept" value="Display" type="submit" class="addempbtn">
+
+  </div>
+</form>
+
+  
+
+</html>
